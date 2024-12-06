@@ -16,7 +16,7 @@ Based on the official images:
 ## Setup
 
 1. Install [Docker](http://docker.io).
-2. Install [Docker-compose](http://docs.docker.com/compose/install/) **version >= 1.6**.
+2. Install [Docker compose] (v2) (http://docs.docker.com/compose/install/)
 3. Clone this repository
 
 ## Increase max_map_count on your host (Linux)
@@ -29,16 +29,16 @@ $ sudo sysctl -w vm.max_map_count=262144
 
 # Usage
 
-Start the ELK stack and nginx using *docker-compose*:
+Start the ELK stack and nginx using *docker compose*:
 
 ```bash
-$ docker-compose up
+$ docker compose up
 ```
 
 You can also choose to run it in background (detached mode):
 
 ```bash
-$ docker-compose up -d
+$ docker compose up -d
 ```
 
 Now that the stack and nginx are running
